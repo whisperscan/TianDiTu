@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+    <com.tianditu.android.maps.MapView 
+		android:id="@+id/mapview"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"/>
+    <LinearLayout 
+        android:orientation="horizontal"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+      	<Spinner
+               android:id="@+id/spn_tbn"
+               android:layout_width="160dp"
+               android:layout_height="match_parent"
+               android:prompt="@string/spinner_title"/>
+        
+		<Button
+		    android:id="@+id/vector"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="onClickVector"
+		    android:text="矢量" />
+
+		<Button 
+			android:id="@+id/image"
+			android:text="影像"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:onClick="onClickImage"/>
+
+		<Button
+			    android:id="@+id/water"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:onClick="onClickSwitchWater"
+			    android:text="水系" />
+				
+		<Button
+			    android:id="@+id/railway"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:onClick="onClickSwitchRailway"
+			    android:text="铁路" />
+						
+		<Button
+		    android:id="@+id/location"
+		    android:text="定位"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="onClickLocation"/>	
+		    
+		<Button
+		    android:id="@+id/search"
+		    android:text="搜索"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="onClickSearch"/>	
+		    
+		<Button
+		    android:id="@+id/stadiometry"
+		    android:text="两点测距"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="onClickStadiometry"/>	
+		    
+		<Button
+		    android:id="@+id/pathplanning"
+		    android:text="多点路径规划"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:onClick="onClickPathPlanning"/>	
+		
+	</LinearLayout>
+</FrameLayout>

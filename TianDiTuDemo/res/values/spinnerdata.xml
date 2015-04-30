@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="table_name">
+        <item>TB_GPS</item>
+        <item>TB_PIC</item>
+        <item>TB_VIDEO</item>
+        <item>TB_VOICE</item>
+        <item>TB_COMPASS</item>
+        <item>TB_LIGHT</item>
+        <item>TB_PPM</item>
+        <item>TB_DEMAGER_EPORT</item>
+        <item>TB_MEDICAL_DEAL</item>
+        <item>PLACE_ACCESS</item>
+        <item>TB_RESCUE_INFO</item>
+        <item>TB_RETREAT_APPLY</item>
+        <item>TB_SAVE_SIT</item>
+        <item>TB_RESCUE_SIT</item>
+        <item>TB_VICTIMS_DEAL</item>
+        <item>VICTIMS_INFO</item>
+        <item>TB_SEARCH_SIT</item>
+    </string-array>
+</resources>

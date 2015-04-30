@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            
+           <TextView 
+               android:id="@+id/txt_table"
+               android:text="  Table Name: "
+               android:layout_width="100dp"
+               android:layout_height="wrap_content"/>
+           
+           <Spinner
+               android:id="@+id/spn_tbn"
+               android:layout_width="160dp"
+               android:layout_height="match_parent"
+               android:prompt="@string/spinner_title"/>
+               
+           <Button
+               android:id="@+id/add_item"
+               android:layout_width="159dp"
+               android:layout_height="wrap_content"
+               android:onClick="onClickAddTestingDataToAllTable"
+               android:text="Add" />
+            
+            <Button
+                android:id="@+id/dsp_first_item"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDisplayFist"
+                android:text="Display First" />
+            
+            <Button
+                android:id="@+id/dsp_next_item"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDisplayNext"
+                android:text="Display Next" />
+            
+            <Button
+                android:id="@+id/dsp_last_item"
+                android:layout_width="159dp"
+                android:layout_height="wrap_content"
+                android:onClick="onClickDisplayLast"
+                android:text="Display Last" />
+            
+        </LinearLayout>
+        
+	<LinearLayout 
+	    android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    
+	    <TextView
+                android:id="@+id/txt_view"
+                android:layout_width="fill_parent"
+                android:layout_height="435dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.97"
+                android:onClick="onClick_Add"
+                android:text="None" />
+	    
+	</LinearLayout>
+</LinearLayout>
